@@ -778,8 +778,7 @@ const gif = require("gif-search");
 const client = new Discord.Client({disableEveryone: true});
 
 const prefix = "-";
-/////////////////////////
-////////////////////////
+
 
 client.on('message', async msg =>{
 	if (msg.author.bot) return undefined;
@@ -800,9 +799,7 @@ client.on('message', async msg =>{
     msg.channel.send(embed);
     }
 });
-/////////////////////////
-////////////////////////
-//////////////////////
+
 client.on('message', async msg =>{
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
@@ -830,19 +827,7 @@ client.on('message', async msg =>{
         }
     };
 });
-/////////////////////////
-////////////////////////
-//////////////////////
-/////////////////////////
-////////////////////////
-//////////////////////
 
-/////////////////////////
-////////////////////////
-//////////////////////
-/////////////////////////
-////////////////////////
-//////////////////////
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
@@ -910,7 +895,7 @@ client.on('message', async msg => {
 					.setColor("#f7abab")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
-/////////////////					
+					
 					try {
 
 						var response = await msg.channel.awaitMessages(msg2 => msg2.content > 0 && msg2.content < 11, {
