@@ -522,7 +522,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`قيد البرمجه`,"http://twitch.tv/y04zgamer")
+  client.user.setGame(`TND Life vRP`,"http://twitch.tv/y04zgamer")
    client.user.setStatus("dnd")
 });
 
